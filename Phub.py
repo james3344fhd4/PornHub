@@ -97,6 +97,7 @@ async def sarch(_,message):
         return
     resolt = f"""
 **🏷JUDUL:** {res[0].title}
+**⏰DURASI:** {res[0].duration}
 **👁‍🗨DILIHAT:** {res[0].views}
 **🌟RATING:** {res[0].rating}"""
     await m.delete()
@@ -165,6 +166,7 @@ async def callback_query_next(_, query):
               ]
     resolt = f"""
 **🏷JUDUL:** {res[cur_page].title}
+**⏰DURASI:** {res[curr_page].duration}
 **👁‍🗨DILIHAT:** {res[cur_page].views}
 **🌟RATING:** {res[cur_page].rating}"""
 
@@ -218,6 +220,7 @@ async def callback_query_next(_, query):
             ]
     resolt = f"""
 **🏷JUDUL:** {res[cur_page].title}
+**⏰DURASI:** {res[curr_page].duration}
 **👁‍🗨DILIHAT:** {res[cur_page].views}
 **🌟RATING:** {res[cur_page].rating}"""
 
@@ -241,6 +244,7 @@ async def callback_query_next(_, query):
     db[m.chat.id]['dur'] = res[curr_page].duration
     resolt = f"""
 **🏷JUDUL:** {res[curr_page].title}
+**⏰DURASI:** {res[curr_page].duration}
 **👁‍🗨DILIHAT:** {res[curr_page].views}
 **🌟RATING:** {res[curr_page].rating}"""
     pos = 1
