@@ -5,14 +5,8 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, InputMedi
 from Python_ARQ import ARQ 
 from asyncio import get_running_loop
 from wget import download
-from sample_config import OWNER, BOT_NAME, REPO_BOT
+from sample_config import OWNER, BOT_NAME, REPO_BOT, ARQ_API_KEY, Bot_token
 # Config Check-----------------------------------------------------------------
-if os.path.exists("config.py"):
-    from config import *
-elif os.path.exists("sample_config.py"):
-    from sample_config import *
-else:
-    raise Exception("File Konfigurasi Anda Tidak Valid atau Mungkin Tidak Ada! Silakan Periksa File Konfigurasi Anda atau Coba Lagi.")
 
 # ARQ API and Bot Initialize---------------------------------------------------
 session = ClientSession()
