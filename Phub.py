@@ -59,7 +59,7 @@ Untuk Mencari di PHub cukup Ketik sesuatu"""
 )
 async def repo(_, message):
     m= await message.reply_text(
-        text="""Silahkan cek tombol di bawah kak""",
+        text="""Repo ini di buat karna khilaf harap maklum, Kalau mau deploy?\nSilahkan cek tombol di bawah kak""",
         reply_markup=InlineKeyboardMarkup(
           [
             [
