@@ -31,8 +31,8 @@
 	    "required": true
     },
     "OWNER": {
-      "description": "Isi dengan username lu",
-      "value": "@kenkanasw"
+      "description": "Isi dengan username lu, tanpa tanda @ oke",
+      "value": "kenkanasw"
     },
     "BOT_NAME": {
       "description": "Isi dengan nama bot kalian",
