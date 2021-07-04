@@ -97,7 +97,7 @@ async def sarch(_,message):
         return
     resolt = f"""
 **🏷JUDUL:** {res[0].title}
-**👁‍🗨PENONTON:** {res[0].views}
+**👁‍🗨DILIHAT:** {res[0].views}
 **👑RATING:** {res[0].rating}"""
     await m.delete()
     m = await message.reply_photo(
@@ -165,7 +165,7 @@ async def callback_query_next(_, query):
               ]
     resolt = f"""
 **🏷JUDUL:** {res[cur_page].title}
-**👁‍🗨PENONTON:** {res[cur_page].views}
+**👁‍🗨DILIHAT:** {res[cur_page].views}
 **👑RATING:** {res[cur_page].rating}"""
 
     await m.edit_media(media=InputMediaPhoto(res[cur_page].thumbnails[0].src))
@@ -218,7 +218,7 @@ async def callback_query_next(_, query):
             ]
     resolt = f"""
 **🏷JUDUL:** {res[cur_page].title}
-**👁‍🗨PENONTON:** {res[cur_page].views}
+**👁‍🗨DILIHAT:** {res[cur_page].views}
 **👑RATING:** {res[cur_page].rating}"""
 
     await m.edit_media(media=InputMediaPhoto(res[cur_page].thumbnails[0].src))
@@ -241,7 +241,7 @@ async def callback_query_next(_, query):
     db[m.chat.id]['dur'] = res[curr_page].duration
     resolt = f"""
 **🏷JUDUL:** {res[curr_page].title}
-**👁‍🗨PENONTON:** {res[curr_page].views}
+**👁‍🗨DILIHAT:** {res[curr_page].views}
 **👑RATING:** {res[curr_page].rating}"""
     pos = 1
     cbb = []
