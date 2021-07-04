@@ -47,8 +47,8 @@ async def start(_, message):
 async def help(_, message):
     await message.reply_text(
         """**Di bawah ini adalah Perintah Saya...**
-/help Untuk Menampilkan Pesan Ini.\n\n
-/repo Untuk Mendapatkan Repo.\n\n
+/help Untuk Menampilkan Pesan Ini.\n
+/repo Untuk Mendapatkan Repo.\n
 
 Untuk Mencari di PHub cukup Ketik sesuatu"""
     )
