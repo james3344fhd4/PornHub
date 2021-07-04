@@ -74,7 +74,6 @@ async def repo(_, message):
               ]
             ]
           )
-        disable_web_page_preview=True
        )
 
 # Let's Go----------------------------------------------------------------------
