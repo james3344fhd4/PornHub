@@ -40,7 +40,7 @@ repo - Menampilkan sumber
 help - Cara penggunaan
 ```
 
-Tinggal salin tempel ke pengaturan edit bot edit command di bot father
+Tinggal salin tempel ke pengaturan, Edit bot, Edit command di bot father
 <p align="center"><img src="https://telegra.ph/file/f5c4a50b5b85423e77e72.jpg"/></p>
 
 
