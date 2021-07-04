@@ -98,7 +98,7 @@ async def sarch(_,message):
     resolt = f"""
 **🏷JUDUL:** {res[0].title}
 **👁‍🗨DILIHAT:** {res[0].views}
-**👑RATING:** {res[0].rating}"""
+**🌟RATING:** {res[0].rating}"""
     await m.delete()
     m = await message.reply_photo(
         photo=res[0].thumbnails[0].src,
@@ -106,13 +106,13 @@ async def sarch(_,message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("▶️",
+                    InlineKeyboardButton("▶️NEXT",
                                          callback_data="next"),
-                    InlineKeyboardButton("🗑",
+                    InlineKeyboardButton("🗑HAPUS",
                                          callback_data="delete"),
                 ],
                 [
-                    InlineKeyboardButton("📥",
+                    InlineKeyboardButton("📥DOWNLOAD",
                                          callback_data="dload")
                 ]
             ]
@@ -138,35 +138,35 @@ async def callback_query_next(_, query):
     if len(res) <= (cur_page+1):
         cbb = [
                 [
-                    InlineKeyboardButton("◀️",
+                    InlineKeyboardButton("◀️PREV",
                                          callback_data="previous"),
-                    InlineKeyboardButton("📥",
+                    InlineKeyboardButton("📥DOWNLOAD",
                                          callback_data="dload"),
                 ],
                 [
-                    InlineKeyboardButton("🗑",
+                    InlineKeyboardButton("🗑HAPUS",
                                          callback_data="delete"),
                 ]
               ]
     else:
         cbb = [
                 [
-                    InlineKeyboardButton("◀️",
+                    InlineKeyboardButton("◀️PREV",
                                          callback_data="previous"),
-                    InlineKeyboardButton("▶️",
+                    InlineKeyboardButton("▶️NEXT",
                                          callback_data="next"),
                 ],
                 [
-                    InlineKeyboardButton("🗑",
+                    InlineKeyboardButton("🗑HAPUS",
                                          callback_data="delete"),
-                    InlineKeyboardButton("📥",
+                    InlineKeyboardButton("📥DOWNLOAD",
                                          callback_data="dload")
                 ]
               ]
     resolt = f"""
 **🏷JUDUL:** {res[cur_page].title}
 **👁‍🗨DILIHAT:** {res[cur_page].views}
-**👑RATING:** {res[cur_page].rating}"""
+**🌟RATING:** {res[cur_page].rating}"""
 
     await m.edit_media(media=InputMediaPhoto(res[cur_page].thumbnails[0].src))
     await m.edit(
@@ -191,35 +191,35 @@ async def callback_query_next(_, query):
     if cur_page != 0:
         cbb=[
                 [
-                    InlineKeyboardButton("◀️",
+                    InlineKeyboardButton("◀️PREV",
                                          callback_data="previous"),
-                    InlineKeyboardButton("▶️",
+                    InlineKeyboardButton("▶️NEXT",
                                          callback_data="next"),
                 ],
                 [
-                    InlineKeyboardButton("🗑",
+                    InlineKeyboardButton("🗑HAPUS",
                                          callback_data="delete"),
-                    InlineKeyboardButton("📥",
+                    InlineKeyboardButton("📥DOWNLOAD",
                                          callback_data="dload")
                 ]
             ]
     else:
         cbb=[
                 [
-                    InlineKeyboardButton("▶️",
+                    InlineKeyboardButton("▶️NEXT",
                                          callback_data="next"),
-                    InlineKeyboardButton("🗑",
+                    InlineKeyboardButton("🗑HAPUS",
                                          callback_data="Delete"),
                 ],
                 [
-                    InlineKeyboardButton("📥",
+                    InlineKeyboardButton("📥DOWNLOAD",
                                          callback_data="dload")
                 ]
             ]
     resolt = f"""
 **🏷JUDUL:** {res[cur_page].title}
 **👁‍🗨DILIHAT:** {res[cur_page].views}
-**👑RATING:** {res[cur_page].rating}"""
+**🌟RATING:** {res[cur_page].rating}"""
 
     await m.edit_media(media=InputMediaPhoto(res[cur_page].thumbnails[0].src))
     await m.edit(
@@ -242,7 +242,7 @@ async def callback_query_next(_, query):
     resolt = f"""
 **🏷JUDUL:** {res[curr_page].title}
 **👁‍🗨DILIHAT:** {res[curr_page].views}
-**👑RATING:** {res[curr_page].rating}"""
+**🌟RATING:** {res[curr_page].rating}"""
     pos = 1
     cbb = []
     for resolts in dl_links.result.video:
