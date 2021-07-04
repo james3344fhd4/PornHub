@@ -6,7 +6,7 @@ if HEROKU:
 
     Bot_token = environ["Bot_token"]
     ARQ_API_KEY = environ["ARQ_API_KEY"]
-    REPO_BOT = environ["https://github.com/kenkannih/Bokep-Bot"]
+    REPO_BOT = environ["REPO_BOT", "https://github.com/kenkannih/Bokep-Bot"]
     OWNER = environ["OWNER"]
     BOT_NAME = environ["BOT_NAME"]
 
