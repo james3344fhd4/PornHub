@@ -16,7 +16,7 @@ phdl = arq.phdl
 # BOT TOKE
 TOKEN = Bot_token
 
-app = Client("Tg_PHub_Bot", bot_token=Bot_token, api_id=6,
+app = Client(f"{BOT_NAME}", bot_token=Bot_token, api_id=6,
              api_hash="eb06d4abfb49dc3eeb1aeb98ae0f581e")
 print("\nBot Sudah siap!...\n")
 
