@@ -37,7 +37,7 @@ async def time_to_seconds(time):
 )
 async def start(_, message):
     m= await message.reply_text(
-        text=f"Hai Saya {BOT_NAME}. Anda dapat Mengunduh Video dari PHub hingga 1080p !"
+        text=f"Hai Saya {BOT_NAME}. Anda dapat Mengunduh Video dari PHub hingga 1080p, Gampang cara menggunakan bot ini tinggal kalian ketik query bebas nanti bot akan memprosesnya.!"
        )
 
 # Help-------------------------------------------------------------------------
