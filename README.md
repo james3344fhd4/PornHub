@@ -11,7 +11,7 @@
 </p>  
 
 <p align="center">
-<img src="https://telegra.ph/file/1354c3253eb2bf185d28f.jpg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/DJCTQ_-_18.svg/1024px-DJCTQ_-_18.svg.png">
 <p>
 
 🇰 🇦 🇱 🇦 🇺   🇩 🇪 🇵 🇱 🇴 🇾  
