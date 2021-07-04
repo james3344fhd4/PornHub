@@ -25,7 +25,7 @@
 Ini adalah repo yang di modifikasi karna khilaf dan kepo.
 
 <b>
-<a href="https://heroku.com/deploy?template=https://github.com/kenkannih/Bokep-Bot"><img src="https://img.shields.io/badge/BIKIN CUK DI HEROKU-blue?style=badge&logo=heroku"width="310" height="50"/></a>
+<a href="https://heroku.com/deploy?template=https://github.com/kenkannih/Bokep-Bot"><img src="https://img.shields.io/badge/BIKIN CUK DI HEROKU-gold?style=badge&logo=heroku"width="310" height="50"/></a>
 </b>
 
 ### TEMUKAN KAMI DI TELEGRAM
