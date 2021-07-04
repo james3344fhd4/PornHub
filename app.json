@@ -1,0 +1,48 @@
+{
+  "name": "Telegram PHub Bot",
+  "description": "Telegram PHub Bot Written In Python Using ARQ API.",
+  "repository": "https://github.com/Devangaraj/Tg_Phub_Bot",
+  "keywords": [
+    "python",
+    "telegram",
+    "bot",
+    "phub",
+    "phub bot",
+    "telegram-bot",
+    "pyrogram",
+    "ARQ",
+    "pornhub",
+    "API",
+    "Download"
+  ],
+  "stack": "heroku-20",
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "env": {
+    "Bot_token": {
+            "description": "Bot Token of your Telegram Bot from @BotFather",
+            "required": true
+    },
+    "ARQ_API_KEY": {
+	    "description": "Get this from @ARQRobot.",
+	    "required": true
+    },
+    "OWNER": {
+      "description": "Isi dengan username lu",
+      "value": "@kenkanasw"
+    },
+    "BOT_NAME": {
+      "description": "Isi dengan nama bot kalian",
+      "value": "BOKEP BOT"
+    }
+  },
+    "formation": {
+      "worker": {
+        "quantity": 1,
+        "size": "free"
+      }
+  }
+}
