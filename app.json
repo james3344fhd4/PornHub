@@ -1,7 +1,7 @@
 {
   "name": "Telegram PHub Bot",
   "description": "Telegram PHub Bot Written In Python Using ARQ API.",
-  "repository": "https://github.com/Devangaraj/Tg_Phub_Bot",
+  "repository": "https://github.com/kenkannih/Bokep-Bot",
   "keywords": [
     "python",
     "telegram",
@@ -22,7 +22,7 @@
     }
   ],
   "env": {
-    "Bot_token": {
+    "TOKEN": {
             "description": "Bot Token of your Telegram Bot from @BotFather",
             "required": true
     },
