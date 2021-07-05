@@ -33,6 +33,7 @@ Ini adalah repo yang di modifikasi karna khilaf dan kepo.
 <a href="https://t.me/kenkanasw"><img src="https://img.shields.io/badge/OWNER KAN-blue?style=for-the-badge&logo=Telegram" /></a>
 <a href="https://t.me/musikkugroup"><img src="https://img.shields.io/badge/SUPPORT GROUP-black?style=for-the-badge&logo=Telegram" /></a>
 <a href="https://t.me/musikkuchannel"><img src="https://img.shields.io/badge/CHANNEL-gold?style=for-the-badge&logo=Telegram" /></a>
+<a href="https://t.me/Maafkhilafbot"><img src="https://img.shields.io/badge/CONTOH BOT-magenta?style=for-the-badge&logo=Telegram" /></a>
 
 
 ### CMD UNTUK [@botfather](https://t.me/botfather)
