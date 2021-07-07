@@ -2,8 +2,7 @@
 
 <p align="center">
   <a href="https://github.com/kenkannih/Bokep-Bot/fork">
-    <img src="https://img.shields.io/github/forks/kenkannih/Bokep-Bot?label=Fork&style=social">
-    
+    <img src="https://img.shields.io/github/forks/kenkannih/Bokep-Bot?label=Fork&style=social">    
   </a>
   <a href="https://github.com/kenkannih/Bokep-Bot">
     <img src="https://img.shields.io/github/stars/kenkannih/Bokep-Bot?style=social">
