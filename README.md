@@ -13,6 +13,8 @@
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/DJCTQ_-_18.svg/1024px-DJCTQ_-_18.svg.png">
 <p>
 
+![github card](https://github-readme-stats.vercel.app/api/pin/?username=kenkannih&repo=Bokep-Bot&theme=dark)
+
 🇰 🇦 🇱 🇦 🇺   🇩 🇪 🇵 🇱 🇴 🇾  
 🇦 🇹 🇦 🇺   🇫 🇴 🇷 🇰   
 🇺 🇸 🇦 🇭 🇦 🇮 🇳   🇰 🇦 🇸 🇮 🇭   
