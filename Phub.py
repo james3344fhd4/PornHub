@@ -280,7 +280,7 @@ async def callback_query_dl(_, query):
         print(e)
         await m.edit("Oops Download Error... Coba lagi")
         return
-    await m.edit(f"**Upload Sekarang** :\n\n'''{capsion}'''")
+    await m.edit(f"**Upload Sekarang** :\n\n{capsion}")
     await app.send_chat_action(m.chat.id, "upload_video")
     await m.edit_media(media=InputMediaVideo(vid,thumb=thomb, duration=durr, supports_streaming=True))
     await m.edit_caption(caption=capsion, caption_entities=entoty)
