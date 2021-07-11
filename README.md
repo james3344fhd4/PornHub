@@ -24,20 +24,16 @@ Simply way to deploy this bot, go deploy on heroku.
 <a href="https://t.me/npornhubdlbot"><img src="https://img.shields.io/badge/EXAMPLE BOT-magenta?style=for-the-badge&logo=Telegram" /></a>
 
 
-### COMMAND FOR BOT [@botfather](https://t.me/botfather)
+### COMMAND FOR BOT [@PornHubBot](https://t.me/npornhubdlbot)
 ```
 start - Start the bot
 repo - Give you a source code
 help - Guide for use
 ```
 
-Tinggal salin tempel ke pengaturan, Edit bot, Edit command di bot father
-<p align="center"><img src="https://telegra.ph/file/f5c4a50b5b85423e77e72.jpg"/></p>
-
-
-### CREDIT
-
-* [KEN KAN](https://github.com/kenkannih/Bokep-Bot) - Bokep-Bot
-
+### CREDITS 💖
+  
+* [LEVINA-LAB](http://github.com/levina-lab)
+* [KEN KAN](https://github.com/kenkannih)
 
 
