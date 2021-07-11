@@ -16,7 +16,7 @@ phdl = arq.phdl
 
 app = Client(f"{BOT_NAME}", bot_token=f"{TOKEN}", api_id=6,
              api_hash="eb06d4abfb49dc3eeb1aeb98ae0f581e")
-print("\nBot Sudah siap!...\n")
+print("\nBOT IS READY TO USE!...\n")
 
 
 db = {}
@@ -37,7 +37,7 @@ async def time_to_seconds(time):
 )
 async def start(_, message):
     m= await message.reply_text(
-        text=f"Hai Saya {BOT_NAME}. Anda dapat Mengunduh Video dari PHub hingga 1080p, Gampang cara menggunakan bot ini tinggal kalian ketik query bebas nanti bot akan memprosesnya.!"
+        text=f"🇬🇧 Hello, i'm {BOT_NAME}. you can download pornhub video with the quality up to 1080p, Just type a query or the video name you want to download and the bot will send you the result!\n\n🇮🇩 Halo, saya {BOT_NAME}, anda dapat mengunduh video dari pornhub dengan kualitas tinggi sampai 1080p, berikan saja nama/judul video yang ingin anda unduh maka saya akan memberikan hasil nya kepada anda."
        )
 
 # Help-------------------------------------------------------------------------
@@ -46,11 +46,12 @@ async def start(_, message):
 )
 async def help(_, message):
     await message.reply_text(
-        """**Di bawah ini adalah Perintah Saya...**
-/help Untuk Menampilkan Pesan Ini.\n
-/repo Untuk Mendapatkan Repo.\n
+        """**🛠 the following commands are available**
+        
+/help see the help message.\n
+/repo get the repo link.\n
 
-Untuk Mencari di PHub cukup Ketik sesuatu"""
+If you want to download phub video, just type any query."""
     )
     
 # Repo  -----------------------------------------------------------------------
