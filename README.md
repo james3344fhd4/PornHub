@@ -1,4 +1,4 @@
-<p align="center"><img src="https://i.postimg.cc/JhJywSMF/logo7-10-14120.png" style="width:100%"></p>
+<p align="center"><img src="https://i.postimg.cc/JhJywSMF/logo7-10-14120.png" style="width:60%"></p>
 
 <p align="center">
   <a href="https://github.com/levina-lab/PornHub/fork">
