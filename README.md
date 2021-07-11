@@ -1,19 +1,10 @@
-<p align="center"><img src="https://i.postimg.cc/JhJywSMF/logo7-10-14120.png" style="width:60%"></p>
+<p align="center"><img src="https://i.postimg.cc/JhJywSMF/logo7-10-14120.png" style="width:100%"></p>
 
 <p align="center">
-  <a href="https://github.com/levina-lab/PornHub/fork">
-    <img src="https://img.shields.io/github/forks/levina-lab/PornHub?label=Fork&style=social">    
-  </a>
-  <a href="https://github.com/levina-lab/PornHub">
-    <img src="https://img.shields.io/github/stars/levina-lab/PornHub?style=social">
-  </a>
-</p>  
-
-<p align="center">
-<img src="https://i.postimg.cc/JhJywSMF/logo7-10-14120.png">
+<img src="https://i.postimg.cc/3wtb5vcq/logo7-11-11540.png">
 <p>
 
-![github card](https://github-readme-stats.vercel.app/api/pin/?username=kenkannih&repo=Bokep-Bot&theme=dark)
+![github card](https://github-readme-stats.vercel.app/api/pin/?username=levina-lab&repo=PornHub&theme=dark)
 
 🇰 🇦 🇱 🇦 🇺   🇩 🇪 🇵 🇱 🇴 🇾  
 🇦 🇹 🇦 🇺   🇫 🇴 🇷 🇰   
@@ -21,12 +12,12 @@
 🇧 🇮 🇳 🇹 🇦 🇳 🇬   🇾 🇦
 
 
-### BOKEP BOT DOWNLOADER
+### PORNHUB DOWNLOADER BOT
 
-Ini adalah repo yang di modifikasi karna khilaf dan kepo.
+You can download pornhub video by using this bot, (limitation will be apllied to this bot soon).
 
 <b>
-<a href="https://heroku.com/deploy?template=https://github.com/kenkannih/Bokep-Bot"><img src="https://img.shields.io/badge/BIKIN CUK DI HEROKU-gold?style=badge&logo=heroku"width="310" height="50"/></a>
+<a href="https://heroku.com/deploy?template=https://github.com/levina-lab/PornHub"><img src="https://img.shields.io/badge/DEPLOY BOT DI HEROKU-Aero blue?style=badge&logo=heroku"width="310" height="50"/></a>
 </b>
 
 ### TEMUKAN KAMI DI TELEGRAM
