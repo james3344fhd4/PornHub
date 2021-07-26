@@ -33,11 +33,11 @@
     },
     "OWNER": {
       "description": "your telegram username, without @ okay",
-      "value": "kenkanasw"
+      "value": "levina-lab"
     },
     "BOT_NAME": {
-      "description": "Isi dengan nama bot kalian",
-      "value": "BOKEP BOT"
+      "description": "fill with your bot name",
+      "value": "PornHub Downloader Bot"
     }
   },
     "formation": {
