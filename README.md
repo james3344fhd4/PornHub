@@ -2,10 +2,6 @@
 
 warning !, this is a telegram bot that contains adult content, access restrictions for this bot will be implemented soon, please don't report this repository and the example bot if you keep want to use it.
 
-<p align="center">
-<img src="https://i.postimg.cc/3wtb5vcq/logo7-11-11540.png">
-<p>
-
 ![github card](https://github-readme-stats.vercel.app/api/pin/?username=levina-lab&repo=PornHub&theme=dark)
 
 ### PORNHUB DOWNLOADER BOT
