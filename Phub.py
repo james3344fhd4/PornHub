@@ -5,7 +5,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, InputMedi
 from Python_ARQ import ARQ 
 from asyncio import get_running_loop
 from wget import download
-from config import OWNER, BOT_NAME, REPO_BOT, ARQ_API_KEY, TOKEN
+from config import OWNER, BOT_NAME, REPO_BOT, ARQ_API_KEY, UPDATES_CHANNEL, TOKEN
 # Config Check-----------------------------------------------------------------
 
 # ARQ API and Bot Initialize---------------------------------------------------
