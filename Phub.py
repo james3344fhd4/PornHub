@@ -16,7 +16,7 @@ phdl = arq.phdl
 
 app = Client(f"{BOT_NAME}", bot_token=f"{TOKEN}", api_id=6,
              api_hash="eb06d4abfb49dc3eeb1aeb98ae0f581e")
-print("\nBOT IS READY TO USE!...\n")
+print("\n✨ BOT IS READY TO USE ✨\n")
 
 
 db = {}
@@ -46,7 +46,7 @@ async def start(_, message):
 )
 async def help(_, message):
     await message.reply_text(
-        """**🛠 the following commands are available**
+        """**🛠 available command:**
         
 /help see the help message.\n
 /repo get the repo link.\n
@@ -60,12 +60,12 @@ If you want to download phub video, just type any query."""
 )
 async def repo(_, message):
     m= await message.reply_text(
-        text="""Repo ini di buat karna khilaf harap maklum, Kalau mau deploy?\nSilahkan cek tombol di bawah kak""",
+        text="""Great, you can make your own bot now, tap the button below to get the repository link.""",
         reply_markup=InlineKeyboardMarkup(
           [
             [
-              InlineKeyboardButton("🛠REPO🛠", url=f"{REPO_BOT}"),
-              InlineKeyboardButton("👮OWNER👮", url=f"t.me/{OWNER}")
+              InlineKeyboardButton("🧩 REPO 🧩", url=f"{REPO_BOT}"),
+              InlineKeyboardButton("👩‍💻 OWNER 👩‍💻", url=f"t.me/{OWNER}")
               
               ]
             ]
@@ -80,27 +80,27 @@ async def sarch(_,message):
     try:
         if "/" in message.text.split(None,1)[0]:
             await message.reply_text(
-                "**Penggunaan:**\nCukup ketik Sesuatu untuk dicari di PHub Secara Langsung"
+                "**💡 usage:**\njust type the phub video name you want to download, and this bot will send you the result."
             )
             return
     except:
         pass
-    m = await message.reply_text("Mendapatkan Hasil.....")
+    m = await message.reply_text("getting results...")
     search = message.text
     try:
         resp = await pornhub(search,thumbsize="large")
         res = resp.result
     except:
-        await m.edit("Tidak Menemukan... Coba lagi")
+        await m.edit("not found: 404")
         return
     if not resp.ok:
-        await m.edit("Tidak Menemukan... Coba lagi")
+        await m.edit("not found, try again")
         return
     resolt = f"""
-**🏷JUDUL:** {res[0].title}
-**⏰DURASI:** {res[0].duration}
-**👁‍🗨DILIHAT:** {res[0].views}
-**🌟RATING:** {res[0].rating}"""
+**🏷 TITLE:** {res[0].title}
+**⏰ DURATION:** {res[0].duration}
+**👁‍🗨 VIEWERS:** {res[0].views}
+**🌟 RATING:** {res[0].rating}"""
     await m.delete()
     m = await message.reply_photo(
         photo=res[0].thumbnails[0].src,
@@ -108,13 +108,13 @@ async def sarch(_,message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("▶️NEXT",
+                    InlineKeyboardButton("▶️ NEXT",
                                          callback_data="next"),
-                    InlineKeyboardButton("🗑HAPUS",
+                    InlineKeyboardButton("🗑 DELETE",
                                          callback_data="delete"),
                 ],
                 [
-                    InlineKeyboardButton("📥DOWNLOAD",
+                    InlineKeyboardButton("📥 DOWNLOAD",
                                          callback_data="dload")
                 ]
             ]
@@ -131,7 +131,7 @@ async def callback_query_next(_, query):
     try:
         data = db[query.message.chat.id]
     except:
-        await m.edit("Ada yang Salah ..... **Cari Lagi**")
+        await m.edit("something went wrong.. **try again**")
         return
     res = data['result']
     curr_page = int(data['curr_page'])
@@ -140,36 +140,36 @@ async def callback_query_next(_, query):
     if len(res) <= (cur_page+1):
         cbb = [
                 [
-                    InlineKeyboardButton("◀️PREV",
+                    InlineKeyboardButton("◀️ PREVIOUS",
                                          callback_data="previous"),
-                    InlineKeyboardButton("📥DOWNLOAD",
+                    InlineKeyboardButton("📥 DOWNLOAD",
                                          callback_data="dload"),
                 ],
                 [
-                    InlineKeyboardButton("🗑HAPUS",
+                    InlineKeyboardButton("🗑 DELETE",
                                          callback_data="delete"),
                 ]
               ]
     else:
         cbb = [
                 [
-                    InlineKeyboardButton("◀️PREV",
+                    InlineKeyboardButton("◀️ PREVIOUS",
                                          callback_data="previous"),
-                    InlineKeyboardButton("▶️NEXT",
+                    InlineKeyboardButton("▶️ NEXT",
                                          callback_data="next"),
                 ],
                 [
-                    InlineKeyboardButton("🗑HAPUS",
+                    InlineKeyboardButton("🗑 DELETE",
                                          callback_data="delete"),
-                    InlineKeyboardButton("📥DOWNLOAD",
+                    InlineKeyboardButton("📥 DOWNLOAD",
                                          callback_data="dload")
                 ]
               ]
     resolt = f"""
-**🏷JUDUL:** {res[cur_page].title}
-**⏰DURASI:** {res[curr_page].duration}
-**👁‍🗨DILIHAT:** {res[cur_page].views}
-**🌟RATING:** {res[cur_page].rating}"""
+**🏷 TITLE:** {res[cur_page].title}
+**⏰ DURATION:** {res[curr_page].duration}
+**👁‍🗨 VIEWERS:** {res[cur_page].views}
+**🌟 RATING:** {res[cur_page].rating}"""
 
     await m.edit_media(media=InputMediaPhoto(res[cur_page].thumbnails[0].src))
     await m.edit(
@@ -185,7 +185,7 @@ async def callback_query_next(_, query):
     try:
         data = db[query.message.chat.id]
     except:
-        await m.edit("Ada yang Salah ..... **Cari Lagi**")
+        await m.edit("something went wrong.. **try again**")
         return
     res = data['result']
     curr_page = int(data['curr_page'])
@@ -194,24 +194,24 @@ async def callback_query_next(_, query):
     if cur_page != 0:
         cbb=[
                 [
-                    InlineKeyboardButton("◀️PREV",
+                    InlineKeyboardButton("◀️ PREVIOUS",
                                          callback_data="previous"),
-                    InlineKeyboardButton("▶️NEXT",
+                    InlineKeyboardButton("▶️ NEXT",
                                          callback_data="next"),
                 ],
                 [
-                    InlineKeyboardButton("🗑HAPUS",
+                    InlineKeyboardButton("🗑 DELETE",
                                          callback_data="delete"),
-                    InlineKeyboardButton("📥DOWNLOAD",
+                    InlineKeyboardButton("📥 DOWNLOAD",
                                          callback_data="dload")
                 ]
             ]
     else:
         cbb=[
                 [
-                    InlineKeyboardButton("▶️NEXT",
+                    InlineKeyboardButton("▶️ NEXT",
                                          callback_data="next"),
-                    InlineKeyboardButton("🗑HAPUS",
+                    InlineKeyboardButton("🗑 DELETE",
                                          callback_data="Delete"),
                 ],
                 [
@@ -220,10 +220,10 @@ async def callback_query_next(_, query):
                 ]
             ]
     resolt = f"""
-**🏷JUDUL:** {res[cur_page].title}
-**⏰DURASI:** {res[curr_page].duration}
-**👁‍🗨DILIHAT:** {res[cur_page].views}
-**🌟RATING:** {res[cur_page].rating}"""
+**🏷 TITLE:** {res[cur_page].title}
+**⏰ DURATION:** {res[curr_page].duration}
+**👁‍🗨 VIEWERS:** {res[cur_page].views}
+**🌟 RATING:** {res[cur_page].rating}"""
 
     await m.edit_media(media=InputMediaPhoto(res[cur_page].thumbnails[0].src))
     await m.edit(
@@ -244,10 +244,10 @@ async def callback_query_next(_, query):
     db[m.chat.id]['thumb'] = res[curr_page].thumbnails[0].src
     db[m.chat.id]['dur'] = res[curr_page].duration
     resolt = f"""
-**🏷JUDUL:** {res[curr_page].title}
-**⏰DURASI:** {res[curr_page].duration}
-**👁‍🗨DILIHAT:** {res[curr_page].views}
-**🌟RATING:** {res[curr_page].rating}"""
+**🏷 TITLE:** {res[curr_page].title}
+**⏰ DURATION:** {res[curr_page].duration}
+**👁‍🗨 VIEWERS:** {res[curr_page].views}
+**🌟 RATING:** {res[curr_page].rating}"""
     pos = 1
     cbb = []
     for resolts in dl_links.result.video:
@@ -267,7 +267,7 @@ async def callback_query_dl(_, query):
     m = query.message
     capsion = m.caption
     entoty = m.caption_entities
-    await m.edit(f"**Sedang Mendownload** :\n\n{capsion}")
+    await m.edit(f"**downloading...** :\n\n{capsion}")
     data = db[m.chat.id]
     res = data['result']
     curr_page = int(data['curr_page'])
@@ -279,7 +279,7 @@ async def callback_query_dl(_, query):
         vid = await download_url(res[pos].url)
     except Exception as e:
         print(e)
-        await m.edit("Oops Download Error... Coba lagi")
+        await m.edit("download error..., try again")
         return
     await m.edit(f"**Upload Sekarang** :\n\n{capsion}")
     await app.send_chat_action(m.chat.id, "upload_video")
