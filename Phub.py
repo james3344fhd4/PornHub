@@ -37,8 +37,15 @@ async def time_to_seconds(time):
 )
 async def start(_, message):
     m= await message.reply_text(
-        text=f"🇬🇧 Hello, i'm {BOT_NAME}. you can download pornhub video with the quality up to 1080p, Just type a query or the video name you want to download and the bot will send you the result!\n\n🇮🇩 Halo, saya {BOT_NAME}, anda dapat mengunduh video dari pornhub dengan kualitas tinggi sampai 1080p, berikan saja nama/judul video yang ingin anda unduh maka saya akan memberikan hasil nya kepada anda."
-       )
+        text=f"🇬🇧 Hello, i'm {BOT_NAME}. you can download pornhub video with the quality up to 1080p, Just type a query or the video name you want to download and the bot will send you the result!\n\n🇮🇩 Halo, saya {BOT_NAME}, anda dapat mengunduh video dari pornhub dengan kualitas tinggi sampai 1080p, berikan saja nama/judul video yang ingin anda unduh maka saya akan memberikan hasil nya kepada anda.",
+        reply_markup=InlineKeyboardMarkup(
+          [
+            [
+              InlineKeyboardButton("📣 Updates Channel", url=f"t.me/{UPDATES_CHANNEL}")
+            ]
+          ]
+        )
+    )
 
 # Help-------------------------------------------------------------------------
 @app.on_message(
