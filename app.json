@@ -1,4 +1,4 @@
-
+{
   "name": "PornHub downloader bot",
   "description": "Telegram Porn Hub Bot Written In Python Using ARQ API.",
   "repository": "https://github.com/Chathura201/PornHub",
@@ -15,7 +15,8 @@
     "pornhub",
     "API",
     "Download"
-  ]
+  ],
+
   "stack": "container",
    "env": {
     "TOKEN": {
@@ -42,5 +43,5 @@
         "quantity": 1,
         "size": "eco"
       }
-  }
-}
+    }
+
