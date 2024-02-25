@@ -17,12 +17,7 @@
     "API",
     "Download"
   ],
-  "buildpacks": [
-    {
-      "url": "heroku/python"
-    }
-  ],
-  "env": {
+    "env": {
     "TOKEN": {
             "description": "Bot Token of your Telegram Bot from @BotFather",
             "required": true
