@@ -34,7 +34,11 @@
       "description": "fill with your bot name",
       "value": "PornHub Downloader Bot"
     }
-  },
+    "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+    ]
     "formation": {
       "worker": {
         "quantity": 1,
