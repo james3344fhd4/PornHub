@@ -16,7 +16,7 @@
     "API",
     "Download"
   ],
-  "stack": "heroku-21",
+  "stack": "heroku-20",
   "buildpacks": [
     {
       "url": "heroku/python"
