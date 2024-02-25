@@ -15,7 +15,7 @@
     "pornhub",
     "API",
     "Download"
-  ],
+  ]
   "stack": "container",
    "env": {
     "TOKEN": {
