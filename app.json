@@ -1,7 +1,7 @@
 {
   "name": "PornHub downloader bot",
   "description": "Telegram Porn Hub Bot Written In Python Using ARQ API.",
-  "repository": "https://github.com/levina-lab/PornHub",
+  "repository": "https://github.com/Chathura201/PornHub",
   "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/DJCTQ_-_18.svg/1024px-DJCTQ_-_18.svg.png",
   "keywords": [
     "python",
@@ -16,7 +16,7 @@
     "API",
     "Download"
   ],
-  "stack": "heroku-20",
+  "stack": "heroku-22",
   "buildpacks": [
     {
       "url": "heroku/python"
